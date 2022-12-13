@@ -1,16 +1,19 @@
-//colors 
+//colors
 $yellow: #FDDA4C;
+$bgray: #454545;
+$mint: #8AC4D0;
 
 //mixin
-@import './config/mixin.scss';
+@import './config/_mixin.scss';
 
 // layout
-@import './layout/fonts';
-@import './layout/normalize';
-@import './layout/base';
-@import './layout/header';
+@import './layout/_fonts';
+@import './layout/_normalize';
+@import './layout/_base';
+@import './layout/_header';
 
 
 // sections
-@import './sections/main';
-@import './sections/about';
+@import './sections/_main';
+@import './sections/_about';
+@import './sections/_services';
