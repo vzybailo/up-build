@@ -1,0 +1,16 @@
+//colors 
+$yellow: #FDDA4C;
+
+//mixin
+@import './config/mixin.scss';
+
+// layout
+@import './layout/fonts';
+@import './layout/normalize';
+@import './layout/base';
+@import './layout/header';
+
+
+// sections
+@import './sections/main';
+@import './sections/about';

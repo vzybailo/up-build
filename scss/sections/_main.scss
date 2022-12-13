@@ -1,0 +1,41 @@
+.main {
+    background-image: url('../../img/bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h2.main__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+.main__subtitle {
+    display: flex;
+    align-items: center;
+    span {
+        color: $yellow;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    p {
+        font-size: 24;
+        color: #fff;
+    }
+}
+.main__desc {
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.btn {
+    color: #fff;
+    text-decoration: dashed;
+    border-bottom: 2px solid #fff;
+    padding: 0 45px 5px 0;
+    &::after {
+        background-image: url('../../img/arrow.png');
+        display: block;
+    }
+}

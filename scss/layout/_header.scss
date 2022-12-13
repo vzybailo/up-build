@@ -1,0 +1,36 @@
+.header {
+    background-color: #000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.img__pic {
+    height: 125px;
+    width: auto;
+}
+
+.nav__list {
+    display: flex;
+
+    .nav__item {
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+   
+    .nav__link {
+        color: #fff;
+        font-size: 20px;
+    }
+}
