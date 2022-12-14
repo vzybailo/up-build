@@ -1,3 +1,41 @@
+.about {
+    min-height: 790px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .title {
     @include title;
+    margin-bottom: 10%;
+}
+.mint{
+    color: $mint;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+}
+.about__logo {
+    position: relative;
+    margin-right: 10%;
+}
+.about__logo-pic {
+    z-index: 1000;
+    position: relative;
+}
+.about__logo-down {
+    position: absolute;
+    left: 7%;
+    top: 12%;
+    z-index: 10;
+}
+.about__desc {
+    font-size: 23px;
+    color: #fff;
+    background-color: #393838;
+    border-radius: 25px;
+    padding: 25px 30px;
+}
+.about__desc-item {
+    list-style: disc;
 }
