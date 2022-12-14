@@ -1,7 +1,17 @@
+section.services {
+    margin-bottom: 10%;
+}
+.title {
+    margin-bottom: 5%;
+}
 .services__number{
     color: $yellow;
     font-size: 68px;
     font-family: 'InterBold';
+    margin: -15px 15px 0 0;
+}
+.services__list {
+    padding: 0;
 }
 .services__item {
     font-size: 24px;
@@ -13,23 +23,36 @@
         background-color: $mint;
         margin-bottom: 22px;
     }
+    &:last-child {
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $mint;
+            margin-bottom: 25px;
+        }
+    }
 }
 .services__wrapper {
-    display: flex;
+   display: flex;
     color: #fff;
 }
 .services__header {
     display: flex;
-    width: 60%;
+    width: 45%;
 }
 .serv__item {
     margin-bottom: 18px;
     display: flex;
     align-items: center;
     &::before {
-        content: url('../../img/circle.png');
+        content: url('./../img/circle.png');
         width: 22px;
         height: 22px;
         margin-right: 15px;
     }
+}
+.serv__list {
+    width: 50%;
 }

@@ -11,9 +11,12 @@ $mint: #8AC4D0;
 @import './layout/_normalize';
 @import './layout/_base';
 @import './layout/_header';
+@import './layout/_footer';
 
 
 // sections
 @import './sections/_main';
 @import './sections/_about';
 @import './sections/_services';
+@import './sections/_works';
+@import './sections/_contacts';

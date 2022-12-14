@@ -1,5 +1,5 @@
 .main {
-    background-image: url('../../img/bg-main.png');
+    background-image: url('./../img/bg-main.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
@@ -44,7 +44,7 @@ h2.main__title {
     width: 15%;
     margin-bottom: 5%;
     &::after {
-        content: url('../../img/arrow.png');
+        content: url('./../img/arrow.png');
         display: block;
         margin-left: 60px;
     }
@@ -60,10 +60,13 @@ h2.main__title {
     background: radial-gradient(107.97% 1498.15% at 0% 11.87%, rgba(107, 183, 208, 0.64) 0%, rgba(107, 183, 208, 0.32) 100%);
     border-radius: 25px;
 }
+.main__adv-list {
+    padding: 30px;
+}
 .main__adv-item {
     display: flex;
     &::before {
-        content: url('../../img/check.png');
+        content: url('./../img/check.png');
         display: flex;
         width: 50px;
         height: 50px;
