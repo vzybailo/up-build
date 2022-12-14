@@ -440,3 +440,9 @@ h2.main__title {
   background-image: url("../../img/arrow.png");
   display: block;
 }
+
+.title {
+  font-size: 40px;
+  color: rgb(148, 45, 45);
+  text-transform: uppercase;
+}
