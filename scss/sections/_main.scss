@@ -51,10 +51,9 @@ h2.main__title {
         height: 24px;
     }
     &:hover {
-        color: $mint;
-        border-bottom: 2px solid $mint;
+        border-bottom: 2px solid $yellow;
         &:after {
-            content: url('./../img/arrow-mint.png');
+            content: url('./../img/arrow-yellow.png');
             display: block;
             margin-left: 60px;
             width: 24px;
