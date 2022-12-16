@@ -2,11 +2,14 @@
     background-image: url('./../img/bg-main.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
-h2.main__title {
+.container-main {
+    margin-top: 10%;
+}
+.main__title {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -43,6 +46,7 @@ h2.main__title {
     display: flex;
     width: 15%;
     margin-bottom: 5%;
+    transition: 200ms;
     &::after {
         content: url('./../img/arrow-white.png');
         display: block;
@@ -74,6 +78,7 @@ h2.main__title {
 }
 .main__adv-item {
     display: flex;
+    margin-bottom: 10px;
     &::before {
         content: url('./../img/check.png');
         display: flex;

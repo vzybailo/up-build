@@ -18,3 +18,15 @@
     font-weight: 900;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'InterSemiBold';
+    src: url('./../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'InterMedium';
+    src: url('./../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }

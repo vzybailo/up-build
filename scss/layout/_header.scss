@@ -1,5 +1,11 @@
 .header {
     background-color: #000;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 5%;
+    z-index: 2000;
+    transition: 0.2s;
+    padding: 15px 0;
 }
 
 .header-container {
@@ -14,8 +20,12 @@
 }
 
 .img__pic {
-    height: 125px;
+    height: 90px;
     width: auto;
+}
+.scrolled__img {
+    transition: 500ms;
+    transform: scale(0.7);
 }
 
 .nav__list {
