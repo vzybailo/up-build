@@ -47,14 +47,18 @@ h2.main__title {
         content: url('./../img/arrow-white.png');
         display: block;
         margin-left: 60px;
-        &:hover {
-            content: url('./../img/arrow-mint.png');
-            display: block;
-            margin-left: 60px;
-        }
+        width: 24px;
+        height: 24px;
     }
     &:hover {
-        color: rgb(235, 233, 233);
+        border-bottom: 2px solid $yellow;
+        &:after {
+            content: url('./../img/arrow-yellow.png');
+            display: block;
+            margin-left: 60px;
+            width: 24px;
+            height: 24px;
+        }
     }
 }
 .main__adv {
