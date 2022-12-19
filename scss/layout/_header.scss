@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    max-width: 100%;
 }
 
 .yellow {
@@ -27,7 +27,14 @@
     transition: 500ms;
     transform: scale(0.7);
 }
-
+.nav {
+    @include phones {
+        display: none;
+    }
+    @include tablets {
+        display: none;
+    }
+}
 .nav__list {
     display: flex;
 
@@ -47,3 +54,4 @@
         }
     }
 }
+

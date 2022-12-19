@@ -5,6 +5,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    @include phones {
+        background-position: right;
+    }
 }
 .container-main {
     margin-top: 10%;
@@ -15,11 +18,24 @@
     letter-spacing: 4px;
     color: #fff;
     margin-bottom: 47px;
+    @include phones {
+        font-size: 24px;
+    }
+    @include tablets {
+        font-size: 32px;
+    }
 }
 .main__subtitle {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    @include phones {
+        display: block;
+        font-size: 22px;
+    }
+    @include tablets {
+        display: block;
+    }
     span {
         color: $yellow;
         font-size: 32px;
@@ -29,12 +45,19 @@
     p {
         font-size: 24px;
         color: #fff;
+        @include phones {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
     }
 }
 .main__desc {
     color: #fff;
     margin-bottom: 70px;
     font-size: 24px;
+    @include phones {
+        font-size: 18px;
+    }
 }
 
 .btn {
@@ -64,6 +87,10 @@
             height: 24px;
         }
     }
+    @include phones {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
 }
 .main__adv {
     display: flex;
@@ -72,9 +99,18 @@
     width: 60%;
     background: radial-gradient(107.97% 1498.15% at 0% 11.87%, rgba(107, 183, 208, 0.64) 0%, rgba(107, 183, 208, 0.32) 100%);
     border-radius: 25px;
+    @include phones {
+        width: 85%;
+        font-size: 18px;
+        flex-direction: column;
+        padding: 30px;
+    }
 }
 .main__adv-list {
     padding: 30px;
+    @include phones {
+        padding: 0;
+    }
 }
 .main__adv-item {
     display: flex;
@@ -85,5 +121,10 @@
         width: 50px;
         height: 50px;
         margin-right: 10px;
+        @include phones {
+            content: url('./../img/check-mobile.png');
+            width: 20px;
+            height: 0;
+        }
     }
 }

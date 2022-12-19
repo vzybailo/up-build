@@ -8,6 +8,19 @@
 .title {
     @include title;
     margin-bottom: 10%;
+    @include phones {
+        font-size: 24px;
+    }
+}
+.about-title {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    @include phones {
+        margin-bottom: -7%;
+        font-size: 24px;
+    }
 }
 .mint{
     color: $mint;
@@ -15,20 +28,32 @@
 .about-content {
     display: flex;
     align-items: center;
+    @include phones {
+        flex-direction: column;
+    }
 }
 .about__logo {
     position: relative;
     margin-right: 10%;
+    @include phones {
+        margin-bottom: 25px;
+    }
 }
 .about__logo-pic {
     z-index: 1000;
     position: relative;
+    @include phones {
+        width: 90px;
+    }
 }
 .about__logo-down {
     position: absolute;
     left: 7%;
     top: 12%;
     z-index: 10;
+    @include phones {
+        width: 90px;
+    }
 }
 .about__desc {
     font-size: 23px;
@@ -48,4 +73,7 @@
 }
 .about__desc-item {
     list-style: disc;
+    @include phones {
+       font-size: 18px;
+    }
 }

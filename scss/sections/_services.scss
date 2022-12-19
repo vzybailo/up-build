@@ -9,6 +9,15 @@ section.services {
     font-size: 68px;
     font-family: 'InterBold';
     margin: -15px 15px 0 0;
+    @include phones {
+        font-size: 32px;
+        margin: 0;
+     }
+}
+.services__title {
+    @include phones {
+        font-size: 20px;
+     }
 }
 .services__list {
     padding: 0;
@@ -33,14 +42,26 @@ section.services {
             margin-bottom: 25px;
         }
     }
+    @include phones {
+        font-size: 18px;
+     }
 }
 .services__wrapper {
    display: flex;
     color: #fff;
+    @include phones {
+       flex-direction: column;
+    }
 }
 .services__header {
     display: flex;
     width: 45%;
+    @include phones {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+     }
 }
 .serv__item {
     margin-bottom: 18px;
@@ -55,4 +76,19 @@ section.services {
 }
 .serv__list {
     width: 50%;
+    @include phones {
+        display: none;
+        width: 100%;
+     }
+}
+.services__icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+.services__plus {
+    @include phones {
+        display: block;
+     }
 }

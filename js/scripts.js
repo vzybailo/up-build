@@ -38,3 +38,14 @@ window.onscroll = function scrollFunction() {
     }  
   }
 }
+
+// accordeon
+
+let minus = document.querySelector('.services__minus')
+let plus = document.querySelector('.services__plus')
+let content = document.querySelector('.serv__list')
+
+plus.addEventListener('click', function() {
+  content.style.display = 'block'
+  console.log('work')
+})

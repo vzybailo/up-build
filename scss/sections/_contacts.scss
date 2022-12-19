@@ -1,6 +1,9 @@
 .container-contacts {
     padding: 5% 0;
     display: flex;
+    @include phones {
+        flex-direction: column;
+     }
 }
 .contacts__data {
     background-color: #fff;
@@ -16,6 +19,11 @@
             transform: scale(1.05);
         }
     }
+    @include phones {
+        margin-right: 0;
+        padding: 77px 30px;
+        margin-bottom: 27px;
+     }
 }
 .contacts__head {
     width: max-content;
@@ -26,12 +34,18 @@
     font-weight: 600;
     margin-bottom: 14px;
     transition: transform 300ms;
+    @include phones {
+        font-size: 18px;
+     }
 }
 .contacts__head-name {
     font-size: 23px;
     margin-bottom: 40px;
     font-family: 'InterMedium';
     transition: transform 300ms;
+    @include phones {
+        font-size: 18px;
+     }
 }
 .contacts__phone {
     display: flex;
@@ -48,6 +62,9 @@
         height: 24px;
         margin-right: 15px;
     }
+    @include phones {
+        font-size: 18px;
+     }
 }
 .contacts__email {
     display: flex;
@@ -63,6 +80,9 @@
         height: 24px;
         margin-right: 15px;
     }
+    @include phones {
+        font-size: 18px;
+     }
 }
 .contacts__ctv {
     font-family: 'InterSemiBold';
@@ -86,4 +106,9 @@
             transform: scale(1.05);
         }
     }
+    @include phones {
+        font-size: 18px;
+        padding: 50px;
+        margin-bottom: 67px;
+     }
 }

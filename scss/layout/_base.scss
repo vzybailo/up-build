@@ -24,4 +24,8 @@ h1, h2, h3, h4 , h5, h6 {
 .container {
     width: 1280px;
     margin: 0 auto;
+    @include phones {
+        padding: 0 15px;
+        max-width: 90%;
+    }
 }

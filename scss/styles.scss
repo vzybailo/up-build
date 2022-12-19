@@ -3,6 +3,11 @@ $yellow: #FDDA4C;
 $bgray: #454545;
 $mint: #8AC4D0;
 
+//adaptive
+$phones: 480px;
+$tablets: 768px;
+$desktop: 1280px;
+
 //mixin
 @import './config/_mixin.scss';
 
