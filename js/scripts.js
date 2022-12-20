@@ -1,3 +1,13 @@
+// burger menu
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
 // anchor links
 
 const anchors = document.querySelectorAll('a[href*="#"]');
@@ -8,6 +18,8 @@ for( let anchor of anchors) {
     const blockID = anchor.getAttribute('href')
     const fixedHeaderHeight = 90;
 		const top = document.querySelector('' + blockID).offsetTop - fixedHeaderHeight;
+    menuBtn.classList.toggle('active');
+	  menu.classList.toggle('active');
     window.scrollTo({
     	top,
       left: 0,
