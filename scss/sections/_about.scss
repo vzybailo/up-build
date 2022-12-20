@@ -4,10 +4,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 10%;
+    @include phones {
+        padding: 10% 0;
+    }
 }
 .title {
     @include title;
     margin-bottom: 10%;
+    @include tablets {
+        font-size: 32px;
+    }
     @include phones {
         font-size: 24px;
     }
@@ -42,6 +48,9 @@
 .about__logo-pic {
     z-index: 1000;
     position: relative;
+    @include tablets {
+        width: 170px;
+    }
     @include phones {
         width: 90px;
     }
@@ -51,6 +60,9 @@
     left: 7%;
     top: 12%;
     z-index: 10;
+    @include tablets {
+        width: 170px;
+    }
     @include phones {
         width: 90px;
     }
@@ -70,6 +82,9 @@
 .about__desc-list {
     padding: 24px 30px;
     transition: transform 300ms;
+    @include tablets {
+        font-size: 20px;
+    }
 }
 .about__desc-item {
     list-style: disc;

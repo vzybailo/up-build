@@ -13,6 +13,9 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    @include tablets {
+        max-width: 80%;
+    }
 }
 
 .yellow {
@@ -28,10 +31,10 @@
     transform: scale(0.7);
 }
 .nav {
-    @include phones {
+    @include tablets {
         display: none;
     }
-    @include tablets {
+    @include phones {
         display: none;
     }
 }

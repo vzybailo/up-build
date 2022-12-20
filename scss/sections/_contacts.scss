@@ -1,8 +1,13 @@
 .container-contacts {
     padding: 5% 0;
     display: flex;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+     }
     @include phones {
         flex-direction: column;
+        align-items: center;
      }
 }
 .contacts__data {
@@ -19,10 +24,16 @@
             transform: scale(1.05);
         }
     }
+    @include tablets {
+        margin: 0 0 60px 0;
+        padding: 60px;
+        width: 60%;
+     }
     @include phones {
         margin-right: 0;
         padding: 77px 30px;
         margin-bottom: 27px;
+        width: 80%;
      }
 }
 .contacts__head {
@@ -106,6 +117,10 @@
             transform: scale(1.05);
         }
     }
+    @include tablets {
+        padding: 120px 50px;
+        margin-bottom: 100px;
+     }
     @include phones {
         font-size: 18px;
         padding: 50px;

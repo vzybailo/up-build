@@ -18,33 +18,41 @@
     letter-spacing: 4px;
     color: #fff;
     margin-bottom: 47px;
-    @include phones {
-        font-size: 24px;
-    }
     @include tablets {
         font-size: 32px;
+    }
+    @include phones {
+        font-size: 24px;
     }
 }
 .main__subtitle {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    @include tablets {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
     @include phones {
         display: block;
         font-size: 22px;
-    }
-    @include tablets {
-        display: block;
     }
     span {
         color: $yellow;
         font-size: 32px;
         text-transform: uppercase;
         margin-right: 20px;
+        @include tablets {
+            margin-right: 0;
+        }
     }
     p {
         font-size: 24px;
         color: #fff;
+        @include tablets {
+            font-size: 20px;
+        }
         @include phones {
             margin: 0 0 10px 0;
             font-size: 18px;
@@ -55,6 +63,9 @@
     color: #fff;
     margin-bottom: 70px;
     font-size: 24px;
+    @include tablets {
+        font-size: 20px;
+    }
     @include phones {
         font-size: 18px;
     }
@@ -99,6 +110,9 @@
     width: 60%;
     background: radial-gradient(107.97% 1498.15% at 0% 11.87%, rgba(107, 183, 208, 0.64) 0%, rgba(107, 183, 208, 0.32) 100%);
     border-radius: 25px;
+    @include tablets {
+        width: 100%;
+    }
     @include phones {
         width: 85%;
         font-size: 18px;
@@ -126,5 +140,8 @@
             width: 20px;
             height: 0;
         }
+    }
+    @include tablets {
+        font-size: 20px;
     }
 }

@@ -4,17 +4,29 @@ section.services {
 .title {
     margin-bottom: 5%;
 }
+.title-services {
+    @include tablets {
+       margin-bottom: 50px;
+     }
+}
 .services__number{
     color: $yellow;
     font-size: 68px;
     font-family: 'InterBold';
     margin: -15px 15px 0 0;
+    @include tablets {
+        font-size: 32px;
+        margin: -9px 15px 0 0;
+      }
     @include phones {
         font-size: 32px;
         margin: 0;
      }
 }
 .services__title {
+    @include tablets {
+        font-size: 22px;
+      }
     @include phones {
         font-size: 20px;
      }
@@ -42,6 +54,9 @@ section.services {
             margin-bottom: 25px;
         }
     }
+    @include tablets {
+        font-size: 20px;
+      }
     @include phones {
         font-size: 18px;
      }

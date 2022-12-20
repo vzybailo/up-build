@@ -10,6 +10,12 @@ section.works {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 50px;
+    @include tablets {
+        display: flex;
+     }
+    @include phones {
+        display: flex;
+     }
     .works__item {
         background-color: #F5F6F7;;
         padding: 50px 35px;
