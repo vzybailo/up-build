@@ -5,6 +5,14 @@ section.works {
 }
 .container-work {
     padding: 8% 0;
+    @include phones {
+        padding: 20% 0;
+     }
+}
+.title-work {
+    @include phones {
+        margin: 0% 0 10% 15%;
+    }
 }
 .works__list {
     display: grid;

@@ -10,7 +10,7 @@ menuBtn.addEventListener('click', function(){
 
 // anchor links
 
-const anchors = document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll('.nav__box a[href*="#"]');
 
 for( let anchor of anchors) {
   anchor.addEventListener("click", function(e){
@@ -27,6 +27,19 @@ for( let anchor of anchors) {
     })
   })
 }
+
+let btnAnchor = document.querySelector('.btn')
+let btnScroll = document.querySelector('.services')
+
+btnAnchor.addEventListener('click', function(e) {
+  e.preventDefault();
+  
+  btnScroll.scrollIntoView({
+    top: true,
+    block: 'start',
+    behavior: "smooth"
+  })
+})
 
 
 // menu scale in scroll
@@ -53,11 +66,35 @@ window.onscroll = function scrollFunction() {
 
 // accordeon
 
-let minus = document.querySelector('.services__minus')
-let plus = document.querySelector('.services__plus')
-let content = document.querySelector('.serv__list')
+let acc = document.getElementsByClassName("services__header");
 
-plus.addEventListener('click', function() {
-  content.style.display = 'block'
-  console.log('work')
-})
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active-acc");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+//show more btn
+
+var more = document.querySelectorAll('.works__btn');
+
+for (var i = 0; i < more.length; i++) {
+  more[i].addEventListener('click', function() {
+    var showPerClick = 3;
+    
+    var hidden = this.parentNode.querySelectorAll('.hidden');
+    for (var i = 0; i < showPerClick; i++) {
+      if (!hidden[i]) return this.outerHTML = "";
+
+      hidden[i].classList.add('show');
+      hidden[i].classList.remove('hidden');
+    }
+  });
+}
