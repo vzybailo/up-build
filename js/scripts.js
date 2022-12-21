@@ -98,3 +98,28 @@ for (var i = 0; i < more.length; i++) {
     }
   });
 }
+
+
+$(document).ready(function(){
+  $('.works__list').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    adaptiveHeight: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+    ]
+  });
+});
