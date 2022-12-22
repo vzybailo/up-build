@@ -130,7 +130,6 @@ $(document).ready(function(){
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-         
         }
       },
       {
@@ -142,3 +141,31 @@ $(document).ready(function(){
     ]
   });
 });
+
+
+$(function () {
+  $(".works__item").slice(0, 6).show();
+  $("body").on('click touchstart', '.load-more', function (e) {
+    e.preventDefault();
+    $(".works__item:hidden").slice(0, 3).slideDown();
+    if ($(".works__item:hidden").length == 0) {
+      $(".load-more").css('visibility', 'hidden');
+    }
+    $('html,body').animate({
+      scrollTop: $(this).offset().top
+    }, 1000);
+  });
+});
+
+
+$(document).ready(function(){
+  $(".works__item").slice(0, 6).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".works__item:hidden").slice(0, 6).slideDown();
+    if($(".works__item:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+  
+})
