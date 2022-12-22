@@ -8,6 +8,20 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 })
 
+const burgLinks = document.querySelectorAll('.menu__item');
+
+for( let burgLink of burgLinks) {
+  burgLink.addEventListener("click", function(e){
+    e.preventDefault();
+    if(e.target) {
+      menu.classList.toggle('active')
+      menuBtn.classList.toggle('active');
+    }
+  })
+}
+
+
+
 // anchor links
 
 const anchors = document.querySelectorAll('.nav__box a[href*="#"]');
@@ -18,8 +32,6 @@ for( let anchor of anchors) {
     const blockID = anchor.getAttribute('href')
     const fixedHeaderHeight = 90;
 		const top = document.querySelector('' + blockID).offsetTop - fixedHeaderHeight;
-    menuBtn.classList.toggle('active');
-	  menu.classList.toggle('active');
     window.scrollTo({
     	top,
       left: 0,
@@ -100,24 +112,31 @@ for (var i = 0; i < more.length; i++) {
 }
 
 
+// slider
+
+
 $(document).ready(function(){
   $('.works__list').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 300,
-    adaptiveHeight: true,
     arrows: false,
     responsive: [
       {
+        breakpoint: 2048,
+        settings: "unslick"
+     },
+      {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+         
         }
       },
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
         }
       },
     ]

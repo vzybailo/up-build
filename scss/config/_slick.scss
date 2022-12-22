@@ -46,6 +46,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    column-gap: 78px;
+    flex-wrap: wrap;
+    row-gap: 0px;
 
     &:before,
     &:after {
@@ -65,11 +68,21 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    border-radius: 25px;
+    background-color: #F5F6F7;;
+    padding: 50px 35px;
+    margin-right: 45px;
+    margin-bottom: 45px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     [dir="rtl"] & {
         float: right;
     }
     img {
         display: block;
+        border-radius: 25px;
+        width: inherit;
     }
     &.slick-loading img {
         display: none;
@@ -98,3 +111,12 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.slider_wrap * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+    .slick-slide { margin: 0 10px;}
+    .slider-item img { max-width: 100%;}
